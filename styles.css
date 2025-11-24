@@ -1,1 +1,203 @@
+/*Body Styles*/
+body {
+  background-color: #C5C6C7; /*Sets the background color*/
+  font-family: monospace; /*Sets the fonts for the text*/
+}
 
+/*Style for left images*/
+.left-image {
+  display: block /*makes the image behave as a block element*/
+  width: 250px; /*Sets the width of the image*/
+  height: 150px;/*Sets the height of the image*/
+  margin: 5px; /*adds spacing around the image*/
+  border-width: 4px;/*sets the width of the border around the image*/
+  border-style: solid;/*makes the border solid*/
+  border-radius: 10px;/*rounds the corners of the image*/
+}
+
+/*Styles for images within the .tips-container (float to the right)*/
+.tips-container .right-image {
+  float: right; /*floats the image to the right*/
+  width: 250px;
+  height: 150px;
+  margin: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+/*Aligns the text to the right and adds top margin*/
+.text-right {
+  display: flex;/*Enables flexbot layout*/
+  align-items: flex-start;/*Aligns the items to the top of the container*/
+  margin-top: 20px;
+}
+
+/*Adds left padding to unordered lists in the text section*/
+.text-section ul {
+  padding-left: 20px;/*Adds padding to the left of the listed items*/
+}
+
+/*Wraps images with a flexbox layout*/
+.image-wrapper {
+  display: flex;
+  flex-direction: column;/*Arranges items vertically*/
+  align-items: center;
+  float: left;
+  margin: 5px;
+}
+
+/*Clears previous floated elements and centers the content in the container*/
+.image-container {
+  clear: both; /*Clears floated elements*/
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*Ensures the credit text below images in the tips.container*/
+.image-container img{
+  display: block;
+  margin: 0 auto;
+}
+
+/*Styles the credit text below images in the .tips-container*/
+.tips-container .image-credit {
+  margin-top:5px;
+  font-size: 14px;
+  color: #000000;
+  font-family: monospace;
+  text-align: center
+}
+
+/*Styles for credit-link*/
+.credit-link {
+  font-size: 14;
+  color: #000000;
+  font-family: monospace;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*Styles the appearance of links*/
+.credit-link a {
+  color: #66FCF1;
+  text-decoration: none;
+}
+
+/*Changes the appearance of links when hovered over.*/
+.credit-link a:hover {
+  text-decoration: underline/*Underlines the link when hovered over*/
+}
+
+/*Paragraph Styles*/
+p {
+  color: #000000; /*Sets the text color*/
+  font-family: monospace;
+    
+}
+
+/*Styles for the main heading*/
+h1 {
+  color: #66FCF1;
+  font-family: monospace;
+  text-align: center;
+
+
+}
+
+/*Styles for the subheadings*/
+h2 {
+  color: #45A29E;  
+  font-family: monospace;
+  margin-bottom: 5px;
+
+}
+
+/*Adjusts the spacing for h2 elements followed by a .tips-container*/
+h2 + .tips-container {
+  margin-bottom: 5;
+}
+
+/*Removes top margin for h2 elements followed by a .tips-container*/
+h2 + .tips-container + h2 {
+  margin-top: 0;
+}
+
+/*Styles for h3 elements*/
+h3 {
+  color: #45A29E;
+  font-family: monospace;
+  margin-bottom: 5px;
+
+}
+
+/*Flexbot container for elements within .tips-container*/
+.tips-container {
+  display: flex;/*Enables flexbot layout*/
+  align-items: flex-start; /*Aligns items to the top of the container*/
+  margin-bottom: 20px;
+}
+
+/*Ensures .text-section within .prioritize-container takes up available space*/
+.prioritize-container .text-section {
+  flex: 1;/*Makes the text section flexible*/
+}
+
+/*Styles for image section within .tips-container*/
+.tips-container .image-section {
+  display: flex;
+  flex-direction: column;/*Arranges items vertically*/
+  align-items: center;
+  margin-left: 20px;
+}
+
+/*Flexbox container for elements within .prioritize-container*/
+.prioritize-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/*Styles for image section within .prioritize-container*/
+.prioritize-container .image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/*Adds top margin to the license container*/
+.license-container {
+  margin-top: 20px;
+}
+
+/*Styles the license text*/
+.license {
+  font-size: 14px;
+  color: #000000;
+  font-family: monospace;
+}
+
+.goal-item {
+  display: flex;
+  flex-direction: column; /*keeps heading on top*/
+}
+
+.goal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Ensures text is on the left and the image on the right*/
+}
+
+.goal-image {
+  width: 200px;
+  height: 150px;
+  margin-left: 15px; /*adds spacing around the image*/
+  border-width: 4px;/*sets the width of the border around the image*/
+  border-style: solid;/*makes the border solid*/
+  border-radius: 10px;/*rounds the corners of the image*/
+}
+
+h3.credit-heading {
+  text-align: center
+}
