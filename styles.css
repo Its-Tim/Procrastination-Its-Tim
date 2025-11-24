@@ -6,7 +6,7 @@ body {
 
 /*Style for left images*/
 .left-image {
-  display: block /*makes the image behave as a block element*/
+  display: block; /*makes the image behave as a block element*/
   width: 250px; /*Sets the width of the image*/
   height: 150px;/*Sets the height of the image*/
   margin: 5px; /*adds spacing around the image*/
